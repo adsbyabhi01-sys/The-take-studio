@@ -16,7 +16,7 @@ export default function LogoMarquee({ dark = false }) {
         {ticker.map((logo, idx) => (
           <div
             key={idx}
-            className={`flex-shrink-0 flex items-center justify-center w-40 h-20 rounded-2xl px-5 ${
+            className={`flex-shrink-0 flex items-center justify-center w-48 h-24 rounded-2xl px-6 py-4 ${
               dark
                 ? "bg-white/5 border border-white/10"
                 : "bg-white border border-studio-border"
@@ -25,7 +25,7 @@ export default function LogoMarquee({ dark = false }) {
             <img
               src={logo.src}
               alt={logo.alt}
-              className="max-w-full max-h-full object-contain transition-all duration-300"
+              className="w-full h-full object-contain transition-all duration-300"
             />
           </div>
         ))}

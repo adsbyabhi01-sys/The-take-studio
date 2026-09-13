@@ -49,18 +49,7 @@ export default function ClientsPage() {
         <LogoMarquee dark={false} />
       </section>
 
-      {/* LOGO MARQUEE — DARK */}
-      <section className="py-0">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 pt-16 pb-8 bg-studio-dark">
-          <span className="text-xs font-mono text-studio-purple uppercase tracking-widest block">
-            ALL CLIENTS
-          </span>
-          <h2 className="font-display text-5xl md:text-7xl text-white uppercase mt-2">
-            BRAND PARTNERS
-          </h2>
-        </div>
-        <LogoMarquee dark={true} />
-      </section>
+
 
       {/* TRUST HIGHLIGHTS */}
       <section className="py-24 bg-studio-dark text-white border-t border-white/10">

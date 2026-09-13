@@ -10,7 +10,7 @@ export default function AboutPage() {
       name: 'SHOURABH TOMAR',
       role: 'CEO & FOUNDER',
       image: '/shourabh-tomar.png',
-      bio: 'Visionary studio director and executive producer with expertise in high-budget video films, commercial storytelling, and multi-camera podcast architecture.'
+      bio: 'Entrepreneur and creative strategist, founder of The Backstory Media and The Take Studio, working at the intersection of digital marketing, branding, content, and media. With The Take Studio, he is building a modern space where ideas, conversations, and stories become powerful content.'
     },
     {
       number: '02',
