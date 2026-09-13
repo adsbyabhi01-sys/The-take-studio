@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Play, CheckCircle2, Sparkles } from 'lucide-react';
 import VideoModal from '../components/VideoModal';
+import LogoMarquee from '../components/LogoMarquee';
 
 export default function HomePage() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -339,23 +340,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. CLIENTS & PARTNERS LOGO TICKER */}
-      <section className="py-24 border-b border-studio-border bg-studio-card">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 text-center space-y-10">
+      {/* 6. CLIENTS & PARTNERS LOGO MARQUEE */}
+      <section className="py-20 border-b border-studio-border bg-studio-card">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 text-center mb-10">
           <span className="text-xs font-mono text-studio-purple uppercase tracking-widest block">
-            TRUSTED BY BRANDS & CREATORS
+            04 / TRUSTED BY BRANDS &amp; CREATORS
           </span>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center">
-            {['AURORA', 'VALOR', 'NEXUS', 'ECHO', 'VANGUARD', 'SOLARIS'].map((brand, i) => (
-              <div
-                key={i}
-                className="p-6 rounded-2xl bg-white border border-studio-border flex items-center justify-center font-display text-2xl text-studio-dark/60 hover:text-studio-purple hover:border-studio-purple/40 hover:shadow-sm transition-all cursor-pointer"
-              >
-                {brand}
-              </div>
-            ))}
-          </div>
+          <h2 className="font-display text-5xl md:text-7xl text-studio-dark uppercase mt-2">
+            OUR CLIENTS
+          </h2>
         </div>
+        <LogoMarquee dark={false} />
       </section>
 
       <VideoModal

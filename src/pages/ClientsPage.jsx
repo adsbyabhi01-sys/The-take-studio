@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Award, ShieldCheck, Zap, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import LogoMarquee from '../components/LogoMarquee';
 
 export default function ClientsPage() {
   const brandPlaceholders = [
@@ -33,36 +34,32 @@ export default function ClientsPage() {
         </div>
       </section>
 
-      {/* PREMIUM LOGO GRID */}
-      <section className="py-24 max-w-7xl mx-auto px-6 md:px-12">
-        <div className="space-y-4 mb-16">
+      {/* LOGO MARQUEE — LIGHT */}
+      <section className="py-24 max-w-full">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">
+          <div className="space-y-4">
+            <span className="text-xs font-mono text-studio-purple uppercase tracking-widest block">
+              STUDIO PARTNERSHIPS
+            </span>
+            <h2 className="font-display text-5xl md:text-7xl text-studio-dark uppercase">
+              FEATURED COLLABORATORS
+            </h2>
+          </div>
+        </div>
+        <LogoMarquee dark={false} />
+      </section>
+
+      {/* LOGO MARQUEE — DARK */}
+      <section className="py-0">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 pt-16 pb-8 bg-studio-dark">
           <span className="text-xs font-mono text-studio-purple uppercase tracking-widest block">
-            STUDIO PARTNERSHIPS
+            ALL CLIENTS
           </span>
-          <h2 className="font-display text-5xl md:text-7xl text-studio-dark uppercase">
-            FEATURED COLLABORATORS
+          <h2 className="font-display text-5xl md:text-7xl text-white uppercase mt-2">
+            BRAND PARTNERS
           </h2>
         </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {brandPlaceholders.map((brand, idx) => (
-            <motion.div
-              key={brand.name}
-              whileHover={{ y: -6, scale: 1.02 }}
-              className="p-10 rounded-3xl bg-studio-card border border-studio-border flex flex-col items-center justify-center text-center space-y-3 hover:border-studio-purple hover:bg-studio-purple/5 transition-all shadow-sm group"
-            >
-              <div className="w-16 h-16 rounded-2xl bg-white border border-studio-border flex items-center justify-center font-display text-2xl text-studio-dark group-hover:text-studio-purple group-hover:border-studio-purple transition-all shadow-sm">
-                0{idx + 1}
-              </div>
-              <h3 className="font-display text-3xl text-studio-dark group-hover:text-studio-purple transition-colors uppercase">
-                {brand.name}
-              </h3>
-              <span className="text-xs font-mono text-studio-secondary uppercase tracking-widest">
-                {brand.category}
-              </span>
-            </motion.div>
-          ))}
-        </div>
+        <LogoMarquee dark={true} />
       </section>
 
       {/* TRUST HIGHLIGHTS */}
