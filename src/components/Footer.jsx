@@ -105,15 +105,15 @@ export default function Footer() {
                 <Mail className="h-3.5 w-3.5" />
                 <span>hello@thetakestudio.com</span>
               </a>
-              <a href="tel:+919876543210" className="flex items-center gap-2 hover:text-studio-purple transition-colors">
+              <a href="tel:+919627278340" className="flex items-center gap-2 hover:text-studio-purple transition-colors">
                 <Phone className="h-3.5 w-3.5" />
-                <span>+91 98765 43210</span>
+                <span>+91 96272 78340</span>
               </a>
-              <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-studio-purple transition-colors">
+              <a href="https://wa.me/919627278340" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-studio-purple transition-colors">
                 <MessageSquare className="h-3.5 w-3.5" />
                 <span>WhatsApp Studio</span>
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-studio-purple transition-colors">
+              <a href="https://www.instagram.com/thetakestudio?stkn=bXJkcmh2a295cWhjadd" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-studio-purple transition-colors">
                 <Instagram className="h-3.5 w-3.5" />
                 <span>@thetakestudio</span>
               </a>

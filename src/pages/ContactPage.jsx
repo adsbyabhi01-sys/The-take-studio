@@ -59,7 +59,7 @@ export default function ContactPage() {
             <div className="space-y-6">
               {/* WHATSAPP */}
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/919627278340"
                 target="_blank"
                 rel="noreferrer"
                 className="group flex items-center justify-between p-6 rounded-2xl bg-studio-card border border-studio-border hover:border-studio-purple hover:bg-studio-purple/5 transition-all"
@@ -72,7 +72,7 @@ export default function ContactPage() {
                     <span className="font-display text-2xl text-studio-dark group-hover:text-studio-purple transition-colors block uppercase">
                       WHATSAPP STUDIO
                     </span>
-                    <span className="text-xs font-mono text-studio-secondary">+91 98765 43210</span>
+                    <span className="text-xs font-mono text-studio-secondary">+91 96272 78340</span>
                   </div>
                 </div>
                 <ArrowUpRight className="h-5 w-5 text-studio-dark group-hover:text-studio-purple" />
@@ -99,7 +99,7 @@ export default function ContactPage() {
 
               {/* INSTAGRAM */}
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/thetakestudio?stkn=bXJkcmh2a295cWhjadd"
                 target="_blank"
                 rel="noreferrer"
                 className="group flex items-center justify-between p-6 rounded-2xl bg-studio-card border border-studio-border hover:border-studio-purple hover:bg-studio-purple/5 transition-all"
@@ -205,7 +205,7 @@ export default function ContactPage() {
                     <input
                       type="tel"
                       required
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 96272 78340"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full rounded-xl border border-studio-border bg-white px-5 py-4 text-sm text-studio-dark focus:border-studio-purple focus:outline-none transition-colors"
